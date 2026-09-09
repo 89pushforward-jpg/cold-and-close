@@ -8,7 +8,7 @@
 .hero-background-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 42%;transform:translateX(-10%);z-index:-2}
 .hero-background:after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(16,51,72,.06) 10%,rgba(16,51,72,.22) 32%,rgba(16,51,72,.88) 58%,rgba(16,51,72,.97) 100%)}
 .hero-inner{display:flex;justify-content:flex-end}.hero-background .hero-copy{width:49%;max-width:600px}.hero-background h1{font-size:clamp(46px,4.55vw,70px)}.hero-background h1>span{color:var(--blue)}.hero-background .eyebrow{color:#d7edf3}.hero-background .dot{background:var(--blue)}.hero-background .hero-description{color:#e0ebf0}.hero-background .hero-note{color:#d4e4ec}.hero-background .hero-note span{color:var(--blue)}.hero-background .button-dark{background:var(--blue);color:var(--navy)}.hero-background .button-dark:hover{background:#a1deed}.hero-background .text-link{color:white;border-color:#96b0be}.hero-background a:focus-visible{outline-color:white}
-.service-inline-photo{width:100%;max-width:280px;aspect-ratio:16/9;object-fit:cover;border-radius:6px;margin:20px 0 0;align-self:flex-start}.imagery-note{font-size:12px;color:var(--muted);margin-top:24px}
+.service-inline-photo{width:100%;max-width:280px;aspect-ratio:16/9;object-fit:cover;border-radius:6px;margin:20px 0 0;align-self:flex-start}
 @media(max-width:1150px){.hero-background .hero-copy{width:52%}.hero-background .hero-actions{gap:18px}}
 @media(max-width:800px){.hero.hero-background{min-height:660px;padding:60px 0}.hero-background-image{object-position:35% center;transform:none}.hero-background:after{background:linear-gradient(90deg,rgba(16,51,72,.48),rgba(16,51,72,.92) 80%)}.hero-background .hero-copy{width:100%;max-width:540px}.hero-inner{justify-content:flex-start}.hero-background h1{font-size:clamp(44px,8vw,60px)}.hero-background .hero-description{max-width:470px}}
 @media(max-width:480px){.hero.hero-background{min-height:620px;padding:55px 0}.hero-background-image{object-position:38% center}.hero-background:after{background:linear-gradient(180deg,rgba(16,51,72,.68),rgba(16,51,72,.94))}.hero-background h1{font-size:44px}.hero-background .hero-actions{flex-wrap:wrap}.service-inline-photo{max-width:240px}}
@@ -26,3 +26,10 @@
 @media(max-width:480px){.hero-background h1{font-size:40px}.workflow-heading h3{font-size:25px}.workflow-track{grid-template-columns:1fr;gap:26px}.workflow-track li{text-align:left;display:grid;grid-template-columns:65px 1fr;column-gap:18px}.workflow-symbol{width:60px;height:60px;grid-column:1;grid-row:1/4;margin:3px 0}.workflow-symbol svg{width:40px;height:40px}.workflow-step,.workflow-track h4,.workflow-track p{grid-column:2}.workflow-track p{margin:0;max-width:none}.workflow-track h4{margin:6px 0}.workflow-track li:before,.workflow-track li:after{display:none}}
 
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+/* Icons give each collaboration step a distinct visual anchor. */
+.steps article>.step-marker{padding-top:0;display:flex;flex:0 0 48px;flex-direction:column;align-items:center;gap:7px}
+.step-icon{display:grid;place-items:center;width:48px;height:48px;border:1px solid #42697b;border-radius:12px;background:#193e52;color:var(--blue)}
+.step-icon svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.step-number{font-size:11px;line-height:1.4;letter-spacing:.08em;color:#9cc9d8}
+@media(max-width:480px){.steps article{gap:17px}.steps article>.step-marker{flex-basis:42px}.step-icon{width:42px;height:42px;border-radius:10px}.step-icon svg{width:23px;height:23px}}
