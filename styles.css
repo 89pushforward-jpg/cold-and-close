@@ -33,3 +33,9 @@
 .step-icon svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
 .step-number{font-size:11px;line-height:1.4;letter-spacing:.08em;color:#9cc9d8}
 @media(max-width:480px){.steps article{gap:17px}.steps article>.step-marker{flex-basis:42px}.step-icon{width:42px;height:42px;border-radius:10px}.step-icon svg{width:23px;height:23px}}
+
+/* Contact illustration and original brand colors in the services heading. */
+#services-title{color:var(--navy)}#services-title .muted{color:var(--blue)}
+.contact-client-photo{width:100%;max-width:390px;aspect-ratio:16/9;object-fit:cover;object-position:center 40%;border-radius:8px;margin-top:26px}
+.contact-copy .email-link{margin-top:25px}.contact-copy .discretion{margin-top:28px}
+@media(max-width:480px){.contact-client-photo{max-width:320px;margin-top:23px}}
