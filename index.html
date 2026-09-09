@@ -10,7 +10,7 @@
   <meta property="og:description" content="Převezmeme činnosti, které vám berou kapacitu. Od prvního kontaktu po každodenní administrativu.">
   <meta property="og:type" content="website">
   <link rel="icon" type="image/png" href="./assets/favicon.png">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./styles.css?v=hero-background">
   <script src="./script.js" defer></script>
 </head>
 <body>
@@ -27,31 +27,25 @@
     </div>
   </header>
   <main id="obsah">
-    <section class="hero container" aria-labelledby="hero-title">
-      <div class="hero-copy">
+    <section class="hero hero-background" aria-labelledby="hero-title">
+      <img class="hero-background-image" src="./assets/sales.webp" alt="" width="1536" height="1024" fetchpriority="high">
+      <div class="container hero-inner"><div class="hero-copy">
         <p class="eyebrow"><span class="dot"></span> VAŠE EXTERNÍ OBCHODNÍ PODPORA</p>
         <h1 id="hero-title">Váš obchod.<br>Naše podpora.<br><span>Více prostoru.</span></h1>
         <p class="hero-description">Vy se věnujte tomu, co posouvá vaši firmu.<br class="desktop-break"> My převezmeme telefonování, CRM i administrativu, které vám berou čas.</p>
         <div class="hero-actions"><a class="button button-dark" href="#kontakt">Pojďme najít řešení <span aria-hidden="true">↗</span></a><a class="text-link" href="#sluzby">Prohlédnout služby <span aria-hidden="true">↓</span></a></div>
         <p class="hero-note"><span aria-hidden="true">✓</span> Pro malé a střední firmy, živnostníky i rostoucí týmy.</p>
       </div>
-      <figure class="hero-photo">
-        <img src="./assets/sales.webp" alt="Ilustrační scéna: obchodní asistentka při hovoru s klientem zapisuje další kroky k notebooku." width="1536" height="1024" fetchpriority="high">
-        <figcaption><span class="photo-kicker">OBCHODNÍ PODPORA V PRAXI</span><strong>Každý kontakt si zaslouží<br>dobrý další krok.</strong><span class="photo-detail">Oslovení · domluvení schůzky · follow-up</span></figcaption>
-      </figure>
+      </div>
     </section>
     <div class="scope-strip"><div class="container"><span>Obchodní podpora</span><span aria-hidden="true">✳</span><span>CRM management</span><span aria-hidden="true">✳</span><span>Administrativa</span><span aria-hidden="true">✳</span><span>Procesy & AI</span></div></div>
     <section class="services section container" id="sluzby" aria-labelledby="services-title">
       <div class="section-intro"><div><p class="eyebrow">01 / CO PRO VÁS UDĚLÁME</p><h2 id="services-title">Méně úkolů na vás.<br>Více práce <span class="muted">za vámi.</span></h2></div><p>Konkrétní podpora tam, kde ji potřebujete.<br>Od prvního oslovení zákazníka po pořádek<br class="desktop-break"> v každodenním provozu.</p></div>
       <div class="service-grid">
         <article class="service-card"><div class="card-top"><span class="service-icon" aria-hidden="true">↗</span><span class="card-number">01</span></div><h3>Obchodní podpora<br>& telefonování</h3><p>Smysluplná komunikace s firemními kontakty. Systematická práce s příležitostmi od oslovení po navazující kontakt.</p><ul><li>Telefonování a kvalifikace kontaktů</li><li>Domlouvání obchodních schůzek</li><li>Follow-up a evidence výsledků</li><li>Call skripty a školení</li></ul><a class="card-link" href="#kontakt" data-service="Obchodní podpora a telefonování">Promluvme si o obchodu <span aria-hidden="true">↗</span></a></article>
-        <article class="service-card"><div class="card-top"><span class="service-icon" aria-hidden="true">▦</span><span class="card-number">02</span></div><h3>CRM<br>management</h3><p>Obchodní data, ve kterých se vyznáte. Aktuální kontakty a přehled o tom, co se děje a jaký má být další krok.</p><ul><li>Správa kontaktů a obchodních aktivit</li><li>Vyhledávání nových příležitostí</li><li>Úkoly, follow-up a reporting</li><li>Zkušenosti s Raynetem a Shoptetem</li></ul><a class="card-link" href="#kontakt" data-service="CRM management">Udělejme v datech pořádek <span aria-hidden="true">↗</span></a></article>
-        <article class="service-card"><div class="card-top"><span class="service-icon" aria-hidden="true">≡</span><span class="card-number">03</span></div><h3>Administrativa<br>& back office</h3><p>Každodenní agenda v dobrých rukou. Převezmeme rutinu, která je důležitá, ale nemusí zůstávat na vašem stole.</p><ul><li>E-maily, kalendáře a schůzky</li><li>Nabídky, objednávky a podklady</li><li>Podpora vedení a obchodního týmu</li><li>Interní směrnice a pracovní postupy</li></ul><a class="card-link" href="#kontakt" data-service="Administrativa a back office">Uvolněme vám ruce <span aria-hidden="true">↗</span></a></article>
+        <article class="service-card"><div class="card-top"><span class="service-icon" aria-hidden="true">▦</span><span class="card-number">02</span></div><h3>CRM<br>management</h3><p>Obchodní data, ve kterých se vyznáte. Aktuální kontakty a přehled o tom, co se děje a jaký má být další krok.</p><img class="service-inline-photo" src="./assets/crm.webp" alt="Ilustrační přehled obchodních příležitostí v CRM na notebooku." width="1536" height="1024" loading="lazy" decoding="async"><ul><li>Správa kontaktů a obchodních aktivit</li><li>Vyhledávání nových příležitostí</li><li>Úkoly, follow-up a reporting</li><li>Zkušenosti s Raynetem a Shoptetem</li></ul><a class="card-link" href="#kontakt" data-service="CRM management">Udělejme v datech pořádek <span aria-hidden="true">↗</span></a></article>
+        <article class="service-card"><div class="card-top"><span class="service-icon" aria-hidden="true">≡</span><span class="card-number">03</span></div><h3>Administrativa<br>& back office</h3><p>Každodenní agenda v dobrých rukou. Převezmeme rutinu, která je důležitá, ale nemusí zůstávat na vašem stole.</p><img class="service-inline-photo" src="./assets/admin.webp" alt="Ilustrační spolupráce nad firemními dokumenty a plánem práce." width="1536" height="1024" loading="lazy" decoding="async"><ul><li>E-maily, kalendáře a schůzky</li><li>Nabídky, objednávky a podklady</li><li>Podpora vedení a obchodního týmu</li><li>Interní směrnice a pracovní postupy</li></ul><a class="card-link" href="#kontakt" data-service="Administrativa a back office">Uvolněme vám ruce <span aria-hidden="true">↗</span></a></article>
         <article class="service-card"><div class="card-top"><span class="service-icon" aria-hidden="true">✳</span><span class="card-number">04</span></div><h3>Procesy, AI<br>& automatizace</h3><p>Hledáme i způsob, jak úkol příště zvládnout efektivněji. Chytré nástroje zapojujeme do skutečné každodenní práce.</p><ul><li>Praktické využití AI</li><li>Opakující se texty a strukturování dat</li><li>Jednoduchá workflow a automatizace</li><li>Propojení aplikací se současnými nástroji</li></ul><a class="card-link" href="#kontakt" data-service="Procesy, AI a automatizace">Zjednodušme vaši práci <span aria-hidden="true">↗</span></a></article>
-      </div>
-      <div class="service-photos">
-        <figure><img src="./assets/crm.webp" alt="Ilustrační přehled obchodních příležitostí v CRM na notebooku." width="1536" height="1024" loading="lazy" decoding="async"><figcaption><span class="photo-kicker">KONTAKTY, KTERÉ NEZAPADNOU</span><h3>Víte, komu se ozvat. A kdy.</h3><p>Udržujeme kontakty, úkoly a navazující komunikaci přehledně na jednom místě.</p></figcaption></figure>
-        <figure><img src="./assets/admin.webp" alt="Ilustrační scéna: administrativní podpora s podnikatelem prochází dokumenty a plán práce." width="1536" height="1024" loading="lazy" decoding="async"><figcaption><span class="photo-kicker">AGENDA, KTERÁ MÁ SVŮJ ŘÁD</span><h3>Podklady připravené. Ruce volnější.</h3><p>Od dokumentů po organizaci schůzek. Přebíráme rutinu a udržujeme vás v obraze.</p></figcaption></figure>
       </div>
       <p class="imagery-note">Ilustrační vizualizace služeb vytvořené pomocí AI.</p>
     </section>
