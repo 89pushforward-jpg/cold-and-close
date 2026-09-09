@@ -61,3 +61,12 @@
 @media(max-width:1150px){.services .section-intro{align-items:flex-start;flex-direction:column;gap:24px}}
 @media(max-width:800px){.mascot-welcome{width:75px}.welcome-heading{gap:17px}.welcome-heading h2{font-size:35px}.mascot-tasks{width:90px}.mascot-workflow-heading{gap:20px}.mascot-peek{width:130px}}
 @media(max-width:480px){.mascot-welcome{width:56px}.welcome-heading{gap:12px}.welcome-heading h2{font-size:29px}.welcome-heading .eyebrow{font-size:10px}.mascot-workflow-heading{flex-direction:column;gap:14px;text-align:center}.mascot-workflow-heading .eyebrow{justify-content:center}.mascot-tasks{width:85px}.mascot-peek{width:115px;margin-right:20px}}
+
+/* Waving mascot accompanies the original logo in the header. */
+.header-brand-group{display:flex;align-items:center;gap:18px;flex-shrink:0}
+.mascot-header{width:52px;height:76px;object-fit:contain;align-self:center}
+@media(max-width:1150px) and (min-width:801px){.header-brand-group{gap:12px}.header-brand-group .brand{width:195px}.mascot-header{width:42px;height:64px}.header nav{gap:18px}.header nav .nav-contact{padding-inline:14px}}
+@media(max-width:800px){.header-brand-group{gap:12px}.mascot-header{width:39px;height:60px}}
+@media(max-width:480px){.header-brand-group{gap:8px}.header-brand-group .brand{width:158px}.mascot-header{width:31px;height:49px}}
+@media(max-width:360px){.header-brand-group .brand{width:140px}.header-brand-group{gap:6px}.mascot-header{width:27px;height:44px}.header-inner{gap:8px}}
+@media(min-width:801px) and (max-width:1000px){.header-inner{gap:16px}.header-brand-group .brand{width:170px}.header-brand-group{gap:10px}.mascot-header{width:32px;height:52px}.header nav{font-size:12px;gap:12px}.header nav .nav-contact{padding-inline:10px}.nav-contact span{margin-left:10px}}
